@@ -40,7 +40,7 @@ const CARDS_URL = `${BACKEND_URL}/api/v1/get_cards`;
 const config = getLocalConfig();
 configureSecurity();
 
-app.use(cors({credentials: true, origin: UI_BASE_URL}));
+//app.use(cors({credentials: true, origin: UI_BASE_URL}));
 
 app.use(session({
     secret,

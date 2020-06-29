@@ -1,4 +1,5 @@
 # Cloud Fund Python Demo
+Tutorial located here: https://medium.com/cloud-platform/protect-your-clusters-with-ibm-cloud-data-shield-c92c99dbc4d6
 
 # Setting up Cloud Fund Python demo
 
@@ -64,3 +65,9 @@ This can be found at the App ID instance configuration, under `Manage Identity P
 * `use_sgx_backend.sh` Changes `cloud-fund-backend` to use SGX protected image 
 * `use_unconverted_backend.sh` Changes `cloud-fund-backend` to use unconverted image
 * `build_and_push.sh` Builds and pushes each one of the components to the registry specified in `values.sh`
+
+## FAQ
+1. gcore/gdb not found error
+   - run apt-get install gdb inside exec shell (rsh or kubectl exec)
+2. Cannot submit donation at this time error
+   - remove newline chars (\n) or spaces from values in values.sh
